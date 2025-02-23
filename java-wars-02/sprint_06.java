@@ -72,6 +72,81 @@ public class sprint_06 {
         }
         System.out.println("total sub arrays: " + ts);
     }
+
+    public static void printPairs_06(int numbers[]) {
+        int ts = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = 0; j < numbers.length; j++) {
+                for (int k = i; k <= j; k++) {
+                    System.out.print(numbers[k] + ", " + " ");
+                }
+                ts++;
+                System.out.println();
+            }
+            System.out.println();
+        }
+        System.out.println("total sub arrays: " + ts);
+    }
+
+    public static void printPairs_07(int numbers[]) {
+        int ts = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = 0; j < numbers.length; j++) {
+                for (int k = i; k <= j; k++) {
+                    System.out.print(numbers[k] + ", " + " ");
+                }
+                ts++;
+                System.out.println();
+            }
+            System.out.println();
+        }
+        System.out.println("total sub arrays: " + ts);
+    }
+
+    public static void printPairs_08(int numbers[]) {
+        int ts = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = 0; j < numbers.length; j++) {
+                for (int k = i; k <= j; k++) {
+                    System.out.print(numbers[k] + ", " + " ");
+                }
+                ts++;
+                System.out.println();
+            }
+            System.out.println();
+        }
+        System.out.println("total sub arrays: " + ts);
+    }
+
+    public static void printPairs_09(int numbers[]) {
+        int ts = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = 0; j < numbers.length; j++) {
+                for (int k = i; k <= j; k++) {
+                    System.out.print(numbers[k] + ", " + " ");
+                }
+                ts++;
+                System.out.println();
+            }
+            System.out.println();
+        }
+        System.out.println("total sub arrays: " + ts);
+    }
+
+    public static void printPairs_10(int numbers[]) {
+        int ts = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = 0; j < numbers.length; j++) {
+                for (int k = i; k <= j; k++) {
+                    System.out.print(numbers[k] + ", " + " ");
+                }
+                ts++;
+                System.out.println();
+            }
+            System.out.println();
+        }
+        System.out.println("total sub arrays: " + ts);
+    }
     public static void main(String[] args) {
         int[] array1 = {12, 23, 34, 45, 56, 67, 78, 89, 90, 99};
         printSubArr_01(array1);
@@ -87,5 +162,11 @@ public class sprint_06 {
 
         int[] array5 = {10, 30, 50, 67, 90, 120, 150};
         printSubArr_05(array5);
+
+        printPairs_06(array5);
+        printPairs_07(array5);
+        printPairs_08(array5);
+        printPairs_09(array4);
+        printPairs_10(array3);
     }    
 }

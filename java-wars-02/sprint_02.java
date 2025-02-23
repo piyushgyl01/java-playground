@@ -83,6 +83,91 @@ public class sprint_02 {
         System.out.println("Smallest: " + smallest);
         return largest;
     }
+
+    public static int getLargest_06(int numbers[]) {
+        int smallest = Integer.MAX_VALUE;
+        int largest = Integer.MIN_VALUE;
+ 
+        for (int i = 0; i < numbers.length; i++) {
+            if (smallest > numbers[i]) {
+                smallest = numbers[i];
+            }
+            if (largest < numbers[i]) {
+                largest = numbers[i];
+            }
+        }
+        System.out.println("Largest: " + largest);   
+        System.out.println("Smallest: " + smallest);
+        return largest;
+    }
+
+    public static int getLargest_07(int numbers[]) {
+        int smallest = Integer.MAX_VALUE;
+        int largest = Integer.MIN_VALUE;
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (smallest > numbers[i]) {
+                smallest = numbers[i];
+            }
+            if (largest < numbers[i]) {
+                largest = numbers[i];
+            }
+        }
+        System.out.println("Largest: " + largest);
+        System.out.println("Smallest: " + smallest);
+        return largest;
+    }
+
+    public static int getLargest_08(int numbers[]) {
+        int smallest = Integer.MAX_VALUE;
+        int largest = Integer.MIN_VALUE;
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (smallest > numbers[i]) {
+                smallest = numbers[i];
+            }
+            if (largest < numbers[i]) {
+                largest = numbers[i];
+            }
+        }
+        System.out.println("Largest: " + largest);
+        System.out.println("Smallest: " + smallest);
+        return largest;
+    }
+
+    public static int getLargest_09(int numbers[]) {
+        int smallest = Integer.MAX_VALUE;
+        int largest = Integer.MIN_VALUE;
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (smallest > numbers[i]) {
+                smallest = numbers[i];
+            }
+            if (largest < numbers[i]) {
+                largest = numbers[i];
+            }
+        }
+        System.out.println("Largest: " + largest);
+        System.out.println("Smallest: " + smallest);
+        return largest;
+    }
+
+    public static int getLargest_10(int numbers[]) {
+        int smallest = Integer.MAX_VALUE;
+        int largest = Integer.MIN_VALUE;
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (smallest > numbers[i]) {
+                smallest = numbers[i];
+            }
+            if (largest < numbers[i]) {
+                largest = numbers[i];
+            }
+        }
+        System.out.println("Largest: " + largest);
+        System.out.println("Smallest: " + smallest);
+        return largest;
+    }
     public static void main(String[] args) {
         int numbers[] = {1,4,53,46, 7, 23,2};
         getLargest_1(numbers);
@@ -98,5 +183,14 @@ public class sprint_02 {
         
         int numbers4[] = {3, 7, 2, 7, 9, 2, 5, 8, 3, 6, 4, 8};
         getLargest_5(numbers4);
+
+        getLargest_06(numbers4);
+        getLargest_07(numbers4);
+        getLargest_08(numbers4);
+        System.out.println("9");
+        getLargest_09(numbers4);
+        System.out.println("10");
+        getLargest_10(numbers4);
+
     }
 }
