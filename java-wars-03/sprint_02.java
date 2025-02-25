@@ -1,15 +1,18 @@
-public class sprint_01 {
+public class sprint_02 {
     public static void maxSubArrSum_01(int numbers[]) {
-        int currSum = 0;
+        int currSum =  0;
         int maxSum = Integer.MIN_VALUE;
+        int prefix[] = new int[numbers.length];
+
+        prefix[0] = numbers[0];
+        for (int i = 1; i < prefix.length; i++) {
+            prefix[i] = prefix[i - 1] + numbers[i];
+        }
 
         for (int i = 0; i < numbers.length; i++) {
             for (int j = i; j < numbers.length; j++) {
-                currSum = 0;
-                for (int k = i; k <= j; k++) {
-                    currSum += numbers[k];
-                }
-                System.out.println(currSum);
+                currSum = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1];
+                
                 if (maxSum < currSum) {
                     maxSum = currSum;
                 }
@@ -21,14 +24,17 @@ public class sprint_01 {
     public static void maxSubArrSum_02(int numbers[]) {
         int currSum = 0; 
         int maxSum = Integer.MIN_VALUE;
+        int prefix[] = new int[numbers.length];
+
+        prefix[0] = numbers[0];
+        for (int i = 1; i < prefix.length; i++) {
+            prefix[i] = prefix[i - 1] + numbers[i];
+        }
 
         for (int i = 0; i < numbers.length; i++) {
             for (int j = i; j < numbers.length; j++) {
-                currSum = 0; 
-                for (int k = i; k <= j; k++) {
-                    currSum += numbers[k];
-                }
-                System.out.println(currSum);
+                currSum = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1];
+
                 if (maxSum < currSum) {
                     maxSum = currSum;
                 }
@@ -40,14 +46,16 @@ public class sprint_01 {
     public static void maxSubArrSum_03(int numbers[]) {
         int currSum = 0;
         int maxSum = Integer.MIN_VALUE;
+        int prefix[] = new int[numbers.length];
 
+        prefix[0] = numbers[0];
+        for (int i = 1; i < prefix.length; i++) {
+            prefix[i] = prefix[i - 1] + numbers[i];
+        }
         for (int i = 0; i < numbers.length; i++) {
             for (int j = i; j < numbers.length; j++) {
-                currSum = 0;
-                for (int k = i; k <= j; k++) {
-                    currSum += numbers[k];
-                }
-                System.out.println(currSum);
+                currSum = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1];
+
                 if (maxSum < currSum) {
                     maxSum = currSum;
                 }
@@ -59,14 +67,16 @@ public class sprint_01 {
     public static void maxSubArrSum_04(int numbers[]) {
         int currSum = 0;
         int maxSum = Integer.MIN_VALUE;
+        int prefix[] = new int[numbers.length];
+
+        prefix[0] = numbers[0];
+        for (int i = 1; i < prefix.length; i++) {
+            prefix[i] = prefix[i - 1] + numbers[i];
+        }
 
         for (int i = 0; i < numbers.length; i++) {
             for (int j = i; j < numbers.length; j++) {
-                currSum = 0;
-                for (int k = i; k <= j; k++) {
-                    currSum += numbers[k];
-                }
-                System.out.println(currSum);
+                currSum = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1];
                 if (maxSum < currSum) {
                     maxSum = currSum;
                 }
@@ -78,14 +88,15 @@ public class sprint_01 {
     public static void maxSubArrSum_05(int numbers[]) {
         int currSum = 0;
         int maxSum = Integer.MIN_VALUE;
+        int prefix[] = new int[numbers.length];
+
+        for (int i = 1; i < prefix.length; i++) {
+            prefix[i] = prefix[i - 1] + numbers[i];
+        }
 
         for (int i = 0; i < numbers.length; i++) {
             for (int j = i; j < numbers.length; j++) {
-                currSum = 0;
-                for (int k = i; k <= j; k++) {
-                    currSum += numbers[k];
-                }
-                System.out.println(currSum);
+                currSum = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1];
                 if (maxSum < currSum) {
                     maxSum = currSum;
                 }
