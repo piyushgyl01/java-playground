@@ -212,6 +212,5 @@ public class sprint_04 {
             System.out.print(array10[i] + " ");
         }
         System.out.println();
-
     }
 }
